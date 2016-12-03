@@ -1,9 +1,26 @@
 #gallery.fast {
 
   img {
-    display: block;
-    //width: 100vw;
-    //transform: translateY(100%);
+    width: 100vw;
+  }
+
+  .image-layer {
+    position: absolute;
+  }
+
+  .color-quality {
+    img {
+      height: 100vw;
+    }
+    z-index: 1;
+  }
+
+  .low-quality {
+    z-index: 3;
+  }
+
+  .good-quality {
+    z-index: 5;
   }
 
 }
