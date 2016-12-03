@@ -39,7 +39,7 @@ const galleryComp = React.createClass({
     return {
       imagesToLoad: this.getGoodQualityPhotos(),
       topSpace: 0,
-      bottomSpace: this.bottomSpaceCounter(0)
+      bottomSpace: this.bottomSpaceCounter()
     };
   },
 
@@ -68,7 +68,7 @@ const galleryComp = React.createClass({
   },
 
   bottomSpaceCounter(scrolledFromTop) {
-    return (this.props.images.length * this.imageSize) - scrolledFromTop;
+    return (this.props.images.length * this.imageSize) - (this.imagesScrolledPassed() * this.imageSize);
   },
 
   imagesScrolledPassed() {
