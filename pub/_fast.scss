@@ -1,12 +1,9 @@
 #gallery.fast {
 
   img {
+    display: block;
+    //width: 100vw;
     //transform: translateY(100%);
-    width: 100vw;
   }
-
-  //img:first-child {
-  //  transform: translateY(0);
-  //}
 
 }
